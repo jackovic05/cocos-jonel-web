@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" class="rounded-3" href="{{ url_for('static', filename='images/marca/favicon.png') }}">
+    <title>Cocos Jonel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+  <body>
+    <!-- NAVBAR -->
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg fixed-top shadow-sm" style="background-color: #d8d8d8;">
+        <div class="container px-4 py-0">
+          <!-- Logo -->
+          <a href="/" class="navbar-brand d-flex align-items-center">
+            <img src="../static/images/marca/logo-cocos-jonel.png" height="65" alt="Cocos Jonel Logo">
+          </a>
+          <!-- Botón hamburguesa -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Enlaces -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="#" class="nav-link active px-2" aria-current="page">Inicio</a></li>
+              <li class="nav-item"><a href="#conocenos" class="nav-link px-2">Sobre Nosotros</a></li>
+              <li class="nav-item"><a href="#beneficios" class="nav-link px-2">Beneficios</a></li>
+              <li class="nav-item"><a href="#contactanos" class="nav-link px-2">Contáctanos</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- HERO -->
+    <section id="hero" class="bg-light text-white" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('../static/images/fondo/ciudad-panama.jpg') center/cover no-repeat;">
+      <div class="container col-xxl-8 px-5 py-5">
+
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
+          <!-- Col derecha: imágenes -->
+          <div class="col-lg-6">
+            <div class="d-flex justify-content-center align-items-start flex-nowrap gap-3">
+
+              <!-- Botellas a la izquierda -->
+              <div>
+                <img src="../static/images/botellas/foto-botellas.png"
+                     class="img-fluid"
+                     alt="Botellas Agua de Pipa"
+                     style="max-height: 300px;"
+                     loading="lazy">
+              </div>
+
+              <!-- Logo Riba -->
+              <div class="d-flex flex-column align-items-center justify-content-center" style="height: 300px;">
+                <a href="https://www.ribasmith.com" target="_blank" rel="noopener noreferrer">
+                  <img src="../static/images/marca/rimith.jpg"
+                     class="img-fluid mb-2"
+                     alt="Logo Riba Smith"
+                     style="max-height: 60px;"
+                     loading="lazy">
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-white lh-1 mb-3"><span>Agua de Pipa </span><span class="light-green-titles">100% Natural</span></h1>
+            <p class="lead">Directo del coco, sin aditivos. Embotellada con tradición y compromiso.</p>
+            <p class="lead">¡Encuentranos en tu <strong>Riba Smith</strong> más cercano!</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a href="#conocenos" class="btn btn-cocos btn-lg px-4 me-md-2">Conócenos</a>
+              <a href="#beneficios" class="btn btn-cocos-outline btn-lg px-4">Beneficios</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Icon Set -->
+    <section id="icons" class="bg-light">
+      <div class="container col-xxl px-5 py-3" id="icon-grid">
+        <h2 class="pb-2 border-bottom">¿Por qué elegir nuestra <span class="green-titles">Agua de Pipa</span>?</h2>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 py-4">
+          <div class="col d-flex align-items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-droplet me-3" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0q.164.544.371 1.038c.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8m.413 1.021A31 31 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10a5 5 0 0 0 10 0c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
+              <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87z"/>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">100% Natural</h3>
+              <p>Sin trucos, sin químicos, sin azúcar añadida. Solo agua de pipa.</p>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-check-circle me-3" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Calidad Certificada</h3>
+              <p>No es solo coco. Es coco con estándares. Todo está medido, probado y aprobado.</p>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-house-heart me-3" viewBox="0 0 16 16">
+              <path d="M8 6.982C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.309 8 6.982"/>
+              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.707L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.646a.5.5 0 0 0 .708-.707L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Sabor Real</h3>
+              <p>Fresca, suave y con ese toque dulce que no se puede falsificar.</p>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-globe me-3" viewBox="0 0 16 16">
+              <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Producto Nacional</h3>
+              <p>Cosechada y embotellada con cocos locales. Cero importado, todo corazón.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="conocenos" class="bg-light">
+      <div class="container col-xxl px-5 py-5">
+        <h2 class="mb-5 border-bottom brown-titles">Sobre Nosotros</h2>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          <!-- TARJETA 1: Historia -->
+          <div class="col">
+            <div class="card h-100 text-left border-0 shadow-sm">
+              <img src="../static/images/nosotros/historia.jpg" class="card-img-top" alt="Coco germinando">
+              <div class="card-body">
+                <h5 class="card-title">🕰️ Historia</h5>
+                <p class="card-text">Cocos Jonel nació en 2002 como un humilde carrito ambulante vendiendo agua de pipa. Con el apoyo y cariño de nuestros clientes, crecimos paso a paso hasta convertirnos en una planta moderna que hoy produce miles de botellas al día… pero siempre con el mismo espíritu fresco del inicio.</p>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- TARJETA 2: Mision -->
+          <div class="col">
+            <div class="card h-100 text-left border-0 shadow-sm">
+              <img src="../static/images/nosotros/mision.jpg" class="card-img-top" alt="Foto de Panamá">
+              <div class="card-body">
+                <h5 class="card-title">📍 Misión</h5>
+                <p class="card-text">Transformar el coco en productos de la más alta calidad, promoviendo la
+                  sostenibilidad, la innovación y la satisfacción de nuestros clientes.</p>
+                  <p>Queremos mejorar vidas a través
+                  de una bebida natural y responsable.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TARJETA 3: Vision -->
+          <div class="col">
+            <div class="card h-100 text-left border-0 shadow-sm">
+              <img src="../static/images/nosotros/vision.jpg" class="card-img-top" alt="Nuestra visión">
+              <div class="card-body">
+                <h5 class="card-title">🌟 Visión</h5>
+                <p class="card-text">Ser la marca de coco número uno en Panamá y la región. Innovadora, auténtica y comprometida con el planeta.
+                Crecer sí, pero con propósito—dejando una huella positiva en cada comunidad que tocamos.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TARJETA 4: Valores -->
+          <div class="col">
+            <div class="card h-100 text-left border-0 shadow-sm">
+              <img src="../static/images/nosotros/valores.jpg" class="card-img-top" alt="Monito panameño">
+              <div class="card-body">
+                <h5 class="card-title">💚 Valores</h5>
+                <p class="card-text">Vivimos la calidad. Creemos en la sostenibilidad. Apostamos por la innovación. Y hacemos todo con responsabilidad, compromiso y un toque de sabor local.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section id="beneficios" class="py-5 bg-light">
+      <div class="container col-xxl px-5 py-3">
+        <div class="row g-5">
+          <!-- Imagen -->
+          <div class="col-md-6">
+            <img src="../static/images/beneficios/nino-bebiendo.jpg" alt="Nino bebiendo de una pipa" class="img-fluid rounded w-100" style="height: 100%; max-height: 575px; object-fit: contain;">
+          </div>
+          <!-- Lista de Beneficios -->
+          <div class="col-md-6">
+            <h2 class="mb-4 border-bottom">Beneficios de Nuestra <span class="green-titles">Agua de Pipa</span></h2>
+            <ul class="list-unstyled fs-5">
+              <li class="mb-3">💧 <strong>Hidratación real</strong>: Electrolitos naturales que tu cuerpo entiende mejor que cualquier bebida artificial.</li>
+              <li class="mb-3">⚡ <strong>Energía saludable</strong>: Ideal para después del ejercicio... o cuando la vida te exige demasiado.</li>
+              <li class="mb-3">🍃 <strong>Sin aditivos</strong>: Sí, lo volvemos a decir. Porque eso es importante: solo agua de coco, sin cuentos.</li>
+              <li class="mb-3">🛡️ <strong>Defensas al natural</strong>: Antioxidantes y nutrientes que trabajan calladitos, pero hacen su parte.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contactanos -->
+    <section id="contactanos" class="py-3 pb-3 bg-light">
+      <div class="container col-xxl px-5 py-3">
+        <h2 class="mb-5 border-bottom brown-titles">Contáctanos</h2>
+
+        <div class="row">
+          <!-- Formulario -->
+          <div class="col-md-6">
+            {% if sent %}
+              <div class="alert alert-success text-center" role="alert">
+                ¡Gracias por tu mensaje! Te responderemos lo antes posible.
+              </div>
+            {% endif %}
+
+            <form id="contactForm" name="sentMessage" method="post">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre completo, por favor" required>
+              </div>
+              <div class="mb-3">
+                <label for="correo" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="correo" name="correo" placeholder="Tu correo (prometemos no hacer spam)" required>
+              </div>
+              <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input class="form-control" id="telefono" name="telefono" placeholder="Opcional">
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="4" name="mensaje" placeholder="Cuéntanos lo que tienes en mente. No mordemos. A menos que seas una pipa..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-cocos">Enviar</button>
+            </form>
+          </div>
+
+          <!-- Información de contacto -->
+          <div class="col-md-6 text-md-end">
+            <div class="ps-md-4 mt-4 mt-md-0">
+              <h5 class="mb-3">Información de contacto</h5>
+              <p><i class="bi bi-geo-alt-fill me-2 text-success"></i>Distribuidora Jonel S.A. 🥥</p>
+              <p>
+                <i class="bi bi-geo-alt-fill me-2 text-success"></i>
+                <a href="https://maps.app.goo.gl/1x2uHFzvBSjNbhnD6" target="_blank" class="text-decoration-none text-success">
+                  Mañanitas, Los Nogales, Panamá 📍</a>
+                </p>
+              <p><i class="bi bi-envelope-fill me-2 text-success"></i>info@cocosjonel.com 📧</p>
+              <p><i class="bi bi-telephone-fill me-2 text-success"></i>+507 234-6830 📞</p>
+              <img src="../static/images/marca/pty-flag.png"
+                   class="img-fluid"
+                   alt="Bandera de Panamá"
+                   style="max-height: 100px;"
+                   loading="lazy">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer" style="background-color: #D8D8D8;">
+      <div class="container">
+        <footer class="pt-3 my-3" >
+          <ul class="nav justify-content-center border-bottom pt-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+            <li class="nav-item"><a href="#conocenos" class="nav-link px-2 text-body-secondary">Sobre Nosotros</a></li>
+            <li class="nav-item"><a href="#beneficios" class="nav-link px-2 text-body-secondary">Beneficios</a></li>
+            <li class="nav-item"><a href="#contactanos" class="nav-link px-2 text-body-secondary">Contactanos</a></li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-body-secondary" data-bs-toggle="modal" data-bs-target="#modalPrivacidad">
+                Política de Privacidad
+              </a>
+            </li>
+
+          </ul>
+          <p class="text-center text-body-secondary">Gracias por apoyar lo natural 🍃</p>
+          <p class="text-center text-body-secondary">© Cocos Jonel by Distribuidora Jonel S.A. | Todos los derechos reservados.</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- Modal Política de Privacidad -->
+    <div class="modal fade" id="modalPrivacidad" tabindex="-1" aria-labelledby="modalPrivacidadLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalPrivacidadLabel">Política de Privacidad</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <p>En Cocos Jonel, valoramos tu privacidad. Los datos personales que compartas con nosotros a través del formulario de contacto (nombre, correo electrónico, teléfono y mensaje) serán utilizados únicamente con el propósito de responder a tu consulta.</p>
+            <p>No compartimos tu información con terceros, ni la utilizamos con fines comerciales. No utilizamos cookies ni tecnologías de seguimiento en nuestro sitio web.</p>
+            <p>Si deseas modificar o eliminar tu información de nuestros registros, puedes escribirnos a <strong>info@cocosjonel.com</strong>.</p>
+            <p class="mb-0">Distribuidora Jonel S.A. - Panamá</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
