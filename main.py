@@ -7,7 +7,6 @@ import os
 MY_EMAIL = os.environ.get("MY_EMAIL")
 MY_APP_PASSWORD = os.environ.get("GMAIL_SPECIFIC_PASSWORD")
 COCOS_EMAIL = os.environ.get("COCOS_EMAIL")
-
 print(COCOS_EMAIL)
 
 app = Flask(__name__)
