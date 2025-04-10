@@ -13,8 +13,6 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-}
-body {
     background-color: #F5F5F5;
     color: #333;
     padding-top: 75px;
@@ -62,6 +60,22 @@ section {
   filter: brightness(0) saturate(100%) invert(24%) sepia(91%) saturate(432%) hue-rotate(74deg) brightness(95%) contrast(90%);
 }
 
+#mainNav {
+  transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+#mainNav.hidden {
+  transform: translateY(-110%);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  box-shadow: none;
+}
+#mainNav {
+  will-change: transform, opacity;
+  transition: transform 0.4s ease, opacity 0.3s ease, visibility 0.3s ease;
+}
 
 /* HERO */
 .btn-cocos {
@@ -85,4 +99,3 @@ section {
   background-color: #208f14;
   color: white;
 }
-
