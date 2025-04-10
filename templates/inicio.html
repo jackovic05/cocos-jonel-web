@@ -41,43 +41,45 @@
     <section id="hero" class="bg-light text-white" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('../static/images/fondo/ciudad-panama.jpg') center/cover no-repeat;">
       <div class="container col-xxl-8 px-5 py-5">
 
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-4 py-md-5">
+        <div class="row align-items-center g-5 py-4 py-md-5 flex-column-reverse flex-lg-row">
+          <!-- Col izquierda: texto -->
+          <div id="hero-text" class="col-lg-6 px-3 px-sm-4 text-lg-start mt-2 mt-md-3">
+            <h1 class="display-6 fw-bold text-white lh-1 mb-3"><span>Agua de Pipa </span><span class="light-green-titles">100% Natural</span></h1>
+            <p class="lead fs-6 fs-md-5 mb-2">Directo del coco, sin aditivos. Embotellada con tradición y compromiso.</p>
+            <p class="lead fs-6 fs-md-5 mb-3">¡Encuéntranos en tu <strong>Riba Smith</strong> más cercano!</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start justify-content-center">
+              <a href="#conocenos" class="btn btn-cocos btn-lg px-4 me-md-2">Conócenos</a>
+              <a href="#beneficios" class="btn btn-cocos-outline btn-lg px-4">Beneficios</a>
+            </div>
+          </div>
+
           <!-- Col derecha: imágenes -->
-          <div class="col-lg-6 mt-0 mt-lg-3">
-            <div class="d-flex justify-content-center align-items-start flex-nowrap gap-3">
-              <!-- Botellas a la izquierda -->
-              <div>
+          <div class="col-lg-6 d-flex flex-column">
+            <div class="d-flex flex-column flex-sm-row flex-lg-row justify-content-center gap-3 w-100">
+              <!-- Botellas -->
+              <div class="text-center">
                 <img src="../static/images/botellas/foto-botellas.png"
                      class="img-fluid"
                      alt="Botellas Agua de Pipa"
                      style="max-height: 300px;"
                      loading="lazy">
               </div>
-              <!-- Logo Riba -->
-              <div class="d-flex flex-column align-items-center justify-content-center" style="height: 300px;">
+              <!-- Logo Riba Smith -->
+              <div class="d-flex flex-column align-items-center justify-content-center mb-2">
                 <a href="https://www.ribasmith.com" target="_blank" rel="noopener noreferrer">
                   <img src="../static/images/marca/rimith.jpg"
-                     class="img-fluid mb-2"
-                     alt="Logo Riba Smith"
-                     style="max-height: 60px;"
-                     loading="lazy">
+                       class="img-fluid"
+                       alt="Logo Riba Smith"
+                       style="max-height: 60px;"
+                       loading="lazy">
                 </a>
               </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-0 mt-lg-3">
-            <h1 class="display-5 fw-bold text-white lh-1 mb-3"><span>Agua de Pipa </span><span class="light-green-titles">100% Natural</span></h1>
-            <p class="lead">Directo del coco, sin aditivos. Embotellada con tradición y compromiso.</p>
-            <p class="lead">¡Encuentranos en tu <strong>Riba Smith</strong> más cercano!</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <a href="#conocenos" class="btn btn-cocos btn-lg px-4 me-md-2">Conócenos</a>
-              <a href="#beneficios" class="btn btn-cocos-outline btn-lg px-4">Beneficios</a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
 
     <!-- Icon Set -->
     <section id="icons" class="bg-light">

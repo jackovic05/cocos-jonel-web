@@ -99,3 +99,7 @@ section {
   background-color: #208f14;
   color: white;
 }
+
+#hero-text {
+  margin-top: 0 !important;
+}
