@@ -29,3 +29,14 @@ window.addEventListener("scroll", function () {
   lastScrollTop = scrollTop;
 });
 
+// Cerrar el menú hamburguesa al hacer click en un enlace dentro del navbar
+document.querySelectorAll('#navbarNav .nav-link').forEach(function (navLink) {
+navLink.addEventListener('click', function () {
+  const navbarCollapse = document.getElementById('navbarNav');
+  const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+  if (bsCollapse) {
+    bsCollapse.hide();
+  }
+});
+});
+
